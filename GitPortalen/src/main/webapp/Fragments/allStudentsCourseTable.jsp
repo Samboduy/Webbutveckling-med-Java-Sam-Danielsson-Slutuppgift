@@ -3,18 +3,30 @@
     <table>
         <tr>
             <th>Id</th>
-            <th>Course</th>
+            <th>Courses</th>
+            <th>teachers</th>
             <th>YHP</th>
             <th>Description</th>
         </tr>
-        <c:forEach items="${applicationScope.userBean.allCourses}" var="course">
+
+        <c:forEach items="${courses}" var="course">
             <tr>
                 <td>${course.getId()}</td>
                 <td>${course.getCourseName()}</td>
+                <td>${course.getTeacherName()}</td>
                 <td>${course.getYHP()}</td>
                 <td>${course.getDescription()}</td>
+
             </tr>
         </c:forEach>
 
     </table>
 </div>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
